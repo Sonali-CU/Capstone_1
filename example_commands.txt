@@ -1,0 +1,15 @@
+# Example (macOS/Linux)
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+export OPENROUTER_API_KEY="or-<your-key-here>"
+python ingest.py
+streamlit run app.py
+
+# Windows (PowerShell)
+python -m venv venv
+venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+setx OPENROUTER_API_KEY "or-<your-key-here>"
+python ingest.py
+streamlit run app.py
